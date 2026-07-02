@@ -143,10 +143,10 @@ public class MainTest {
     @DisplayName("findUniqueWords doğru çalışıyor mu ?")
     @Test
     public void testFindUniqueWordsMethod() {
-        assertEquals(StringSet.findUniqueWords().size(), 143);
+        assertEquals(143, StringSet.findUniqueWords().size());
 
         List<String> results = StringSet.findUniqueWords().stream().collect(Collectors.toList());
-        assertEquals(results.get(0), "a");
+        assertEquals("a", results.get(0));
         assertEquals(results.get(results.size()-1), "wrote");
 
     }
